@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghi chú cá nhân</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="text" data-lang="notes">🗒️ Notes</h2>
+      <ul>
+        <li data-view="all"><span>📄</span><span class="text" data-lang="allNotes">Tất cả ghi chú</span></li>
+        <li data-view="favorites"><span>⭐</span><span class="text" data-lang="favorites">Yêu thích</span></li>
+        <li data-view="trash"><span>🗑️</span><span class="text" data-lang="trash">Thùng rác</span></li>
+      </ul>
+
+      <div class="lang-switch">
+        🌐 
+        <select id="langSelect">
+          <option value="vi">VI</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <header>
+        <h1 id="mainTitle">Tất cả ghi chú</h1>
+        <button id="addNoteBtn">＋ Thêm ghi chú</button>
+        <button id="emptyTrashBtn" class="hidden">🧹 Dọn thùng rác</button>
+      </header>
+
+      <section id="noteList" class="note-list"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
